@@ -17,7 +17,6 @@ public class ProductController {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(ProductController.class);
 
 
-
     //product controller kiyla nama dhanne nh mokd ProductController eken create wenne Product ekk withryi
 
     @PostMapping()

@@ -1,7 +1,10 @@
 package edu.icet.ecom.controller;
 
 import edu.icet.ecom.model.Product;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,5 +26,11 @@ public class ProductController {
     void create( Product product){
         log.info("Request Received {}", product);
     }
+
+    @GetMapping()
+    void getHeader(HttpServletRequest request){
+        log.info(request.getHeader("host")); // apita me vidiyata apita ena network request wala header eka athule thiyen dewal ases krnn puluw ena rata mokkd mona browser ekkind wagee
+    }
+
 
 }

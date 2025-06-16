@@ -29,7 +29,7 @@ public class ProductController {
 
     @GetMapping()
     @LogExecutionTime
-    List<Product> get(){
+    List<Product> get(String name){
         List<Product> product = service.getProduct();
         return product;
     }

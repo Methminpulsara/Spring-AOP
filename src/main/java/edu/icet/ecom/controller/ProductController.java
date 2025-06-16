@@ -1,5 +1,6 @@
 package edu.icet.ecom.controller;
 
+import edu.icet.ecom.anotation.LogExecutionTime;
 import edu.icet.ecom.model.Product;
 import edu.icet.ecom.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -27,16 +28,9 @@ public class ProductController {
     private final ProductService service;
 
     @GetMapping()
+    @LogExecutionTime
     List<Product> get(){
-
-        long start = System.currentTimeMillis();
-        log.info("start time {}", start);
-
         List<Product> product = service.getProduct();
-        //log.info(request.getHeader("host"));
-        long end = System.currentTimeMillis();
-        log.info("start time {}", end);
-
         return product;
     }
 

@@ -16,12 +16,9 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/products")
 public class ProductController {
-
-
     //meeka ConCreet reference ekk nisa thma api lombokge ena SLf4j Anotation ek dhanne ekh dhna hinda meka oone nh
     //--> login Framework
     //private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(ProductController.class);
-
 
     //product controller kiyla nama dhanne nh mokd ProductController eken create wenne Product ekk withryi
 

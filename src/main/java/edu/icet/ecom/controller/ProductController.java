@@ -30,6 +30,4 @@ public class ProductController {
         List<Product> product = service.getProduct();
         return product;
     }
-
-
 }
